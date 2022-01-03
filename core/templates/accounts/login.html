@@ -5,14 +5,14 @@
 {% block content %}
 
 	<!-- [ auth-signin ] start -->
-
+	<div class="auth-wrapper">
 		<div class="auth-content">
 			<div class="card">
 				<div class="row align-items-center text-center">
 					<div class="col-md-12">
 						<div class="card-body">
 
-
+							<img src="/static/assets/images/logo-dark.png" alt="" class="img-fluid mb-4">
 							<h4 class="mb-3 f-w-400">
 								<a href="https://appseed.us/admin-dashboards/django-dashboard-gradientable">Hello charli</a> - SignIN
 							</h4>
@@ -50,13 +50,17 @@
 							</form>
 
 							<p class="mb-0 text-muted">Don’t have an account? <a href={% url 'register' %} class="f-w-400">Signup</a></p>
-
+							<p class="mb-2 text-muted">
+								<br />
+								&copy; <a target="_blank" rel="noopener" href="https://codedthemes.com/?ref=appseed" class="f-w-400">CodedThemes</a>
+								- coded by <a target="_blank" rel="noopener" href="https://appseed.us" class="f-w-400">AppSeed</a>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
+	</div>
 	<!-- [ auth-signin ] end -->
 
 {% endblock content %}

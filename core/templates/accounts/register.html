@@ -2,7 +2,7 @@
 
 {% block title %} Register {% endblock %}
 
-{% block content %}
+{% block content %} 
 
 	<!-- [ auth-signup ] start -->
 	<div class="auth-wrapper">
@@ -11,10 +11,10 @@
 				<div class="row align-items-center text-center">
 					<div class="col-md-12">
 						<div class="card-body">
-
+							<img src="/static/assets/images/logo-dark.png" alt="" class="img-fluid mb-4">
 							<h4 class="mb-3 f-w-400">
 								<h4 class="mb-3 f-w-400">
-									<a href="https://appseed.us/admin-dashboards/django-dashboard-gradientable">Hello Charli</a> - SignUP
+									<a href="https://appseed.us/admin-dashboards/django-dashboard-gradientable">Django App</a> - SignUP
 								</h4>
 							</h4>
 							<span class="mb-0 text-muted">
@@ -22,17 +22,17 @@
 									{{ msg | safe }}
 								{% else %}
 									Add your credentials
-								{% endif %}
+								{% endif %} 
 							</span>
 							<!-- dummy spacer -->
-							<p> <br /> </p>
-
+							<p> <br /> </p>		
+							
 							<!-- Hide the form on success -->
 							{% if not success %}
 								<form role="form" method="post" action="">
 
-									{% csrf_token %}
-
+									{% csrf_token %}  
+															
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
 											<span class="input-group-text"><i class="feather icon-user"></i></span>
@@ -64,7 +64,7 @@
 										{{ form.password2 }}
 									</div>
 									<span class="text-error">{{ form.password2.errors }}</span>
-
+									
 									<div class="form-group text-left mt-2">
 										<div class="checkbox checkbox-primary d-inline">
 											<input type="checkbox" name="checkbox-fill-2" id="checkbox-fill-2" checked="">
@@ -72,11 +72,18 @@
 										</div>
 									</div>
 									<button type="submit" name="register" class="btn btn-primary btn-block mb-4">Sign up</button>
-
+								
 								</form>
 
 								<p class="mb-0 text-muted">Have an account? <a href={% url 'login' %} class="f-w-400">Login</a></p>
 							{% endif %}
+
+							<p class="mb-2 text-muted">
+								<br />
+								&copy; <a target="_blank" rel="noopener" href="https://codedthemes.com/?ref=appseed" class="f-w-400">CodedThemes</a>
+								- coded by <a target="_blank" rel="noopener" href="https://appseed.us" class="f-w-400">AppSeed</a>
+							</p>
+
 						</div>
 					</div>
 				</div>
@@ -92,4 +99,4 @@
 
 	<script src="/static/assets/js/waves.min.js"></script>
 
-{% endblock javascripts %}
+{% endblock javascripts %} 
